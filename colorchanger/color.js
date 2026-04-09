@@ -2,7 +2,7 @@ const button = document.querySelectorAll(".button");
 const body = document.querySelector("body");
 
 button.forEach(function(button){
-    console.log(e.target);
+    
     
   button.addEventListener("click",function(e){
     if(e.target.id === "grey"){
@@ -19,3 +19,7 @@ button.forEach(function(button){
     }
   })
 })
+
+
+
+
