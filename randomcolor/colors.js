@@ -8,13 +8,18 @@ let randomColor = function(){
 }
 let interval;
 let startChanging = function(){
+
+    
     let backColor = function(){
         document.body.style.backgroundColor=randomColor();
     }
-    interval = setInterval(backColor,1000)
+    if(!interval){
+        interval = setInterval(backColor,1000);
+    }
 }
 let stopChanging = function(){
     clearInterval(interval);
+    interval = null;
 }   
 
 document.getElementById("start").addEventListener("click",startChanging);
